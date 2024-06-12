@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "e9a63afe-ea51-407a-8142-1f0c225c99c0",
+		"name": "aspProveedores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14917719"
+	},
+	"item": [
+		{
+			"name": "getProveedores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5162/proveedores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"proveedores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProveedoresByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5162/proveedores/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"proveedores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertProveedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"FechaIncorporacion\": \"2020-01-15\",\r\n        \"NombreEmpresa\": \"Tech Solutions\",\r\n        \"NombreVisitador\": \"Juan Perez\",\r\n        \"Telefono\": \"2555-1234\",\r\n        \"Direccion\": \"Avenida España San Salvador\",\r\n        \"DiaVisita\": \"Lunes\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5162/proveedores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"proveedores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"jose Pérez\",\r\n    \"tipoVivienda\": \"Casa\",\r\n    \"cantidadHijos\": 3,\r\n    \"recibeAyuda\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5119/padres/6668671dad36bb94c6cdcdfb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5119",
+					"path": [
+						"padres",
+						"6668671dad36bb94c6cdcdfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProveedor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"jose Pérez\",\r\n    \"tipoVivienda\": \"Casa\",\r\n    \"cantidadHijos\": 3,\r\n    \"recibeAyuda\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5162/proveedores/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"proveedores",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
