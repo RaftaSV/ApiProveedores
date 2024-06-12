@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fY1lkaCbjnwY6shCK6GSnTmPT0QwoHjTK1o3+QvtGAc=",
+  "Source": "MongoApiPOS",
+  "BasePath": "_content/MongoApiPOS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
